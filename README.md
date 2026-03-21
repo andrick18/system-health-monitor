@@ -1,5 +1,7 @@
 # EC2 System Health Monitor
 
+> Live and running on AWS EC2 
+
 A lightweight system health monitoring tool for AWS EC2 instances built with Bash and Python.
 
 ## Author
