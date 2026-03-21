@@ -24,6 +24,18 @@ Andrick Diatilo
 - `health_log.json` — auto-generated log file
 - `cron_log.txt` — auto-generated cron output log
 
+## Docker
+
+Pull and run from Docker Hub:
+```bash
+docker pull andrick18/system-health-monitor
+docker run --rm \
+  -e EMAIL_SENDER="youremail@gmail.com" \
+  -e EMAIL_PASSWORD="your_app_password" \
+  -e EMAIL_RECEIVER="youremail@gmail.com" \
+  andrick18/system-health-monitor
+```
+
 ## Usage
 
 ### Run manually
