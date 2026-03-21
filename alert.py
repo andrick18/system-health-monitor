@@ -7,6 +7,7 @@
 #              email alert if any metric is critical
 #############################################################
 
+import os
 import json
 import smtplib
 from email.mime.text import MIMEText
@@ -14,9 +15,9 @@ from email.mime.multipart import MIMEMultipart
 
 # ------------ CONFIG ------------
 LOG_FILE = "health_log.json"
-EMAIL_SENDER = "andrickdiatilo18@gmail.com"
-EMAIL_PASSWORD = "tmfvenaswndzvxte"
-EMAIL_RECEIVER = "andrickdiatilo18@gmail.com"
+EMAIL_SENDER = os.environ.get("EMAIL_SENDER")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+EMAIL_RECEIVER = os.environ.get("EMAIL_RECEIVER")
 
 THRESHOLDS = {
     "cpu": 80.0,
